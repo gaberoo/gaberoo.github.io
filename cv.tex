@@ -1,0 +1,823 @@
+\documentclass[11pt,letter]{article}
+
+\usepackage[top=2cm,bottom=2cm,left=4cm,right=2cm]{geometry}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[hidelinks=true,bookmarks=true,citecolor=red]{hyperref}
+\renewcommand\UrlFont{{\condensedbf}}
+
+% FONTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[hypcap=true,font={small,sf},labelfont={bf}]{caption}
+\usepackage{mathspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+\setmainfont{Adobe Caslon Pro}
+\setsansfont[%
+BoldFont=*-Medium,
+UprightFont=*-Regular,
+BoldItalicFont=*-SemiBold Italic
+]{Barlow}
+\setmathfont(Digits,Latin)[Scale=MatchLowercase]{Adobe Caslon Pro}
+
+\newfontfamily\condensed[Ligatures=TeX]{Barlow Condensed Regular}
+\newfontfamily\semicond[Ligatures=TeX]{Barlow Semi Condensed Regular}
+\newfontfamily\condensedbf[Ligatures=TeX]{Barlow Condensed Medium}
+\newfontfamily\boldsf[Ligatures=TeX]{Barlow Semi Condensed SemiBold}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\Large\boldsf\titlerule}
+\titleformat*{\subsection}{\large\boldsf\em}
+\titleformat*{\subsubsection}{\boldsf}
+
+\usepackage{caption}
+\captionsetup[figure]{labelfont={bf,sf},textfont=sf}
+\captionsetup[table]{labelfont={bf,sf},textfont=sf}
+
+\usepackage{enumitem}
+\setlist{noitemsep} 
+
+\usepackage{etaremune}
+
+\usepackage{mdframed}
+
+\mdfdefinestyle{hlBox}{%
+  hidealllines=true,
+  leftline=true,
+  linecolor=red,
+  leftmargin=-4.5em,
+  rightmargin=-1.5em,
+  linewidth=0.5em,
+  outerlinewidth=2pt,
+  innertopmargin=4pt,
+  innerbottommargin=4pt,
+  innerrightmargin=1em,
+  innerleftmargin=2em,
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{marginnote} % For margin years
+\newcommand{\margin}[1]{\marginnote{\raggedleft\sf\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{5pt}
+\setlength{\marginparwidth}{4cm}
+\reversemarginpar
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\doi}[1]{\href{https://dx.doi.org/#1}{#1}}
+\newcommand{\journal}[1]{{\condensedbf{#1}}}
+\newcommand{\journalissue}[1]{{\sffamily{#1}}}
+\newcommand{\pubyear}[1]{(#1)}
+\newcommand{\me}[1]{\underline{\boldsf{#1}}}
+\newcommand{\pubtitle}[1]{\textit{#1}}
+\newcommand{\pubpages}[1]{#1}
+\newcommand{\contribution}[1]{\\{\sffamily(\textit{#1})}}
+
+\setlength\parindent{0pt}
+
+\begin{document}
+
+%%Header
+\sffamily
+
+{\small\boldsf Curriculum Vitae}\\
+{\LARGE\boldsf Gabriel Etan Leventhal}
+
+\medskip
+
+\begin{minipage}[t]{.5\textwidth}
+  MIT 48-216ga, 15 Vassar St\\ 
+Cambridge, MA 02139\\ 
+U.S.A.\\ 
+
+\end{minipage}%
+\begin{minipage}[t]{.5\textwidth}
+  Phone: +1 (202) 374-9514 \\
+  Email: gaberoo@mit.edu \\
+  URL: \url{http://www.leventhal.ch} \\
+\end{minipage}
+
+\textbf{Language Skills:} English (native), Swiss German (native), German (fluent), French (fluent)
+
+\section*{Current Position}
+\margin{%
+  Nov 2015
+  ---
+  present
+}
+
+{\bfseries Postdoctoral Fellow, Massachusetts Institute of Technology (MIT), U.S.A.}%
+\\ Cordero Lab, Department of Civil and Environmental Engineering%
+
+\medskip
+
+
+
+\section*{Areas of Specialization}
+Microbial Ecosystems; Evolutionary Theory; Interaction Networks; Community Evolution; Evolutionary Ecology; Computational Biology; Phylogenetics; Statistical Inference; Ecological Networks; Epidemiology; HIV Dynamics
+
+\section*{Academic Positions and Education}
+  \margin{%
+  Sep 2014
+  ---
+  Oct 2015
+}
+
+{\bfseries Postdoctoral Researcher, ETH Zürich, Switzerland}%
+\\ Theoretical Biology Group, Institute of Integrative Biology%
+
+\medskip
+
+
+  \margin{%
+  Sep 2009
+  ---
+  Aug 2014
+}
+
+{\bfseries PhD Thesis, ETH Zürich, Switzerland}%
+\\ Title: Modeling the ecology and evolution of infectious diseases\\ Supervisor: Prof. Sebastian Bonhoeffer
+
+\medskip
+
+
+  \margin{%
+  Mar 2008
+  ---
+  Jun 2008
+}
+
+{\bfseries Research Assistant, EPFL, Lausanne, Switzerland}%
+\\ Laboratory of Statistical Biophysics, Department of Physics%
+
+\medskip
+
+
+  \margin{%
+  Oct 2006
+  ---
+  Feb 2008
+}
+
+{\bfseries MSc in Physics, EPFL, Lausanne, Switzerland}%
+
+\medskip
+
+
+  \margin{%
+  Aug 2007
+  ---
+  Feb 2008
+}
+
+{\bfseries Master’s Thesis, Indiana University Bloomington, U.S.A.}%
+\\ Title: Spectral Coarse Graining in Ising Spin Systems\\ Supervisors: Prof. Alessandro Flammini (IUB) and Prof. Paolo De Los Rios (EPFL)
+
+\medskip
+
+
+  \margin{%
+  May 2006
+  ---
+  Aug 2006
+}
+
+{\bfseries Research Assistant, Hong Kong University of Science and Technology}%
+\\ Kwok Yip Szeto Group, Department of Physics%
+
+\medskip
+
+
+  \margin{%
+  Aug 2002
+  ---
+  May 2006
+}
+
+{\bfseries BSc in Physics, EPFL, Lausanne, Switzerland}%
+
+\medskip
+
+
+  \margin{%
+  Sep 2005
+  ---
+  May 2006
+}
+
+{\bfseries Undergraduate Exchange, Hong Kong University of Science and Technology}%
+\\ One-year international exchange program as part of BSc in physics
+
+\medskip
+
+
+
+\pagebreak
+
+\section*{Publications}
+
+  I have published 21 original research articles in peer-reviewed journals 
+(10 as first, co-first, or equal contribution, as well as 
+2 review articles.
+
+$\dagger$ equal contribution; $\ast$ student advisee
+
+    \subsection*{Microbial Ecology \& Evolution}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    preprint
+}%
+{\semicond LS Bittleston\textsuperscript{}, M Gralka\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, I Mizrahi\textsuperscript{}, OX Cordero\textsuperscript{}}.
+\pubtitle{Context-dependent dynamics lead to the assembly of functionally distinct pitcher-plant microbiomes.}
+  \journal{bioRxiv} \journalissue{}
+  \href{https://doi.org/10.1101/727701}{\condensed10.1101/727701}
+
+
+
+        \item%
+          \margin{%
+    2019
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, M Ackermann\textsuperscript{}, K Schiessl\textsuperscript{}}.
+\pubtitle{Why microbes secrete molecules to modify their environment: the case of iron-chelating siderophores.}
+  \journal{Journal of the Royal Society Interface} \journalissue{16(150)}
+  \href{https://doi.org/10.1098/rsif.2018.0674}{\condensed10.1098/rsif.2018.0674}
+
+
+
+        \item%
+          \margin{%
+    2018
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, C Boix\textsuperscript{$\ast$}, U Kuechler\textsuperscript{}, T Enke\textsuperscript{}, E Sliwerska\textsuperscript{}, C Holliger\textsuperscript{}, OX Cordero\textsuperscript{}}.
+\pubtitle{Strain-level diversity drives alternative community types in millimetre-scale granular biofilms.}
+  \journal{Nature Microbiology} \journalissue{3:1295–1303}
+  \href{https://doi.org/10.1038/s41564-018-0242-3}{\condensed10.1038/s41564-018-0242-3}
+
+
+
+        \item%
+          \margin{%
+    2018
+}%
+{\semicond TN Enke\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, M Metzger\textsuperscript{}, J Saavedra\textsuperscript{}, OX Cordero\textsuperscript{}}.
+\pubtitle{Microscale ecology regulates particulate organic matter turnover in model marine microbial communities.}
+  \journal{Nature Communications} \journalissue{}
+  \href{https://doi.org/10.1038/s41467-018-05159-8}{\condensed10.1038/s41467-018-05159-8}
+
+
+
+        \item%
+          \margin{%
+    preprint
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{$\dagger$}, L Wang\textsuperscript{$\dagger$}, RD Kouyos\textsuperscript{}}.
+\pubtitle{Real-world Interaction Networks Buffer Impact of Small Evolutionary Shifts On Biodiversity.}
+  \journal{bioRxiv} \journalissue{}
+  \href{https://doi.org/10.1101/013086}{\condensed10.1101/013086}
+
+
+
+    \end{itemize}
+    \subsection*{Microbiome \& Health}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    2019
+}%
+{\semicond MR Spalinger\textsuperscript{}, M Schwarzfischer\textsuperscript{}, L Hering\textsuperscript{}, A Shawki\textsuperscript{}, A Sayoc\textsuperscript{}, A Santos\textsuperscript{}, C Gottier\textsuperscript{}, S Lang\textsuperscript{}, K Bäbler\textsuperscript{}, A Geirnaert\textsuperscript{}, C Lacroix\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, X Dai\textsuperscript{}, D Rawlings\textsuperscript{}, AA Chan\textsuperscript{}, G Rogler\textsuperscript{}, DF McCole\textsuperscript{}, M Scharl\textsuperscript{}}.
+\pubtitle{Loss of PTPN22 abrogates the beneficial effect of cohousing-mediated fecal microbiota transfer in murine colitis.}
+  \journal{Mucosal Immunology} \journalissue{}
+  \href{https://doi.org/10.1038/s41385-019-0201-1}{\condensed10.1038/s41385-019-0201-1}
+
+
+
+    \end{itemize}
+    \subsection*{Pathogen Evolution}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    2017
+}%
+{\semicond F Bertels\textsuperscript{}, A Marzel\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, V Mitov\textsuperscript{}, J Fellay\textsuperscript{}, HF Günthard\textsuperscript{}, J Böni\textsuperscript{}, S Yerly\textsuperscript{}, T Klimkait\textsuperscript{}, V Aubert\textsuperscript{}, M Battegay\textsuperscript{}, A Rauch\textsuperscript{}, M Cavassini\textsuperscript{}, A Calmy\textsuperscript{}, E Bernasconi\textsuperscript{}, P Schmid\textsuperscript{}, A Scherrer\textsuperscript{}, V Müller\textsuperscript{}, S Bonhoeffer\textsuperscript{}, RD Kouyos\textsuperscript{}, RR Regoes\textsuperscript{}}.
+\pubtitle{Dissecting HIV Virulence: Heritability Of Setpoint Viral Load, CD4+ T Cell Decline And Per-Parasite Pathogenicity.}
+  \journal{Molecular Biology and Evolution} \journalissue{35(1):27-37}
+  \href{https://doi.org/10.1093/molbev/msx246}{\condensed10.1093/molbev/msx246}
+
+
+
+        \item%
+          \margin{%
+    2017
+}%
+{\semicond N Bachmann\textsuperscript{}, T Turk\textsuperscript{}, C Kadelka\textsuperscript{}, A Marzel\textsuperscript{}, M Shilaih\textsuperscript{}, J Böni\textsuperscript{}, V Aubert\textsuperscript{}, T Klimkait\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, HF Günthard\textsuperscript{}, RD Kouyos\textsuperscript{}}.
+\pubtitle{Parent-offspring regression to estimate the heritability of an HIV-1 trait in a realistic setup.}
+  \journal{Retrovirology} \journalissue{14(33)}
+  \href{https://doi.org/10.1186/s12977-017-0356-3}{\condensed10.1186/s12977-017-0356-3}
+
+
+
+        \item%
+          \margin{%
+    2016
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Potential pitfalls in estimating viral load heritability.}
+  \journal{Trends in Microbiology} \journalissue{24(9):687-698}
+  \href{https://doi.org/10.1016/j.tim.2016.04.008}{\condensed10.1016/j.tim.2016.04.008}
+
+
+
+        \item%
+          \margin{%
+    2015
+}%
+{\semicond S Bonhoeffer\textsuperscript{}, C Fraser\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}}.
+\pubtitle{Heritability and the distribution of set point viral load in HIV carriers.}
+  \journal{PLoS Pathogens} \journalissue{11(2):e1004634}
+  \href{https://doi.org/10.1371/journal.ppat.1004634}{\condensed10.1371/journal.ppat.1004634}
+
+
+
+        \item%
+          \margin{%
+    2014
+}%
+{\semicond C Fraser\textsuperscript{}, K Lythgoe\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, G Shirreff\textsuperscript{}, TD Hollingsworth\textsuperscript{}, S Alizon\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Virulence and Pathogenesis of HIV-1 Infection: An Evolutionary Perspective.}
+  \journal{Science} \journalissue{343(6177):1243727}
+  \href{https://doi.org/10.1126/science.1243727}{\condensed10.1126/science.1243727}
+
+
+
+        \item%
+          \margin{%
+    2014
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{$\dagger$}, SR Dünner\textsuperscript{$\dagger$,$\ast$}, S Barribeau\textsuperscript{}}.
+\pubtitle{Delayed virulence and limited costs promote fecundity compensation upon infection.}
+  \journal{American Naturalist} \journalissue{103(4):480-493}
+  \href{https://doi.org/10.1086/675242}{\condensed10.1086/675242}
+
+
+
+        \item%
+          \margin{%
+    2013
+}%
+{\semicond A Hool\textsuperscript{$\dagger$,$\ast$}, \me{GE Leventhal}\textsuperscript{$\dagger$}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Virus-induced target cell activation reconciles set-point viral load heritability and within-host evolution.}
+  \journal{Epidemics} \journalissue{7:35-35}
+  \href{https://doi.org/10.1016/j.epidem.2013.09.002}{\condensed10.1016/j.epidem.2013.09.002}
+
+
+
+        \item%
+          \margin{%
+    2012
+}%
+{\semicond RD Kouyos\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, T Hinkley\textsuperscript{}, M Haddad\textsuperscript{}, J Whitcomb\textsuperscript{}, C Petropoulos\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Exploring the Complexity of the HIV-1 Fitness Landscape.}
+  \journal{PLoS Genetics} \journalissue{8(3):e1002551}
+  \href{https://doi.org/10.1371/journal.pgen.1002551}{\condensed10.1371/journal.pgen.1002551}
+
+
+
+    \end{itemize}
+    \subsection*{Network Epidemiology}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    2017
+}%
+{\semicond JI Liechti\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Host population structure impedes reversion to drug sensitivity after discontinuation of treatment.}
+  \journal{PLoS Computational Biology} \journalissue{13(8):e1005704}
+  \href{https://doi.org/10.1371/journal.pcbi.1005704}{\condensed10.1371/journal.pcbi.1005704}
+
+
+
+        \item%
+          \margin{%
+    2016
+}%
+{\semicond W Delva\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, S Helleringer\textsuperscript{}}.
+\pubtitle{Connecting the dots: network data and models in HIV epidemiology.}
+  \journal{AIDS} \journalissue{30(13):2009-2020}
+  \href{https://doi.org/10.1097/QAD.0000000000001184}{\condensed10.1097/QAD.0000000000001184}
+
+
+
+        \item%
+          \margin{%
+    2015
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{$\dagger$}, AL Hill\textsuperscript{$\dagger$}, M Nowak\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Evolution and emergence of infectious diseases in theoretical and real-world networks.}
+  \journal{Nature Communications} \journalissue{6}
+  \href{https://doi.org/10.1038/ncomms7101}{\condensed10.1038/ncomms7101}
+
+
+
+        \item%
+          \margin{%
+    2012
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, RD Kouyos\textsuperscript{}, T Stadler\textsuperscript{}, VV Wyl\textsuperscript{}, S Yerly\textsuperscript{}, J Böni\textsuperscript{}, C Cellerai\textsuperscript{}, T Klimkait\textsuperscript{}, HF Günthard\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{Inferring Epidemic Contact Structure from Phylogenetic Trees.}
+  \journal{PLoS Computational Biology} \journalissue{8(3):e1002413}
+  \href{https://doi.org/10.1371/journal.pcbi.1002413}{\condensed10.1371/journal.pcbi.1002413}
+
+
+
+    \end{itemize}
+    \subsection*{Mathematical Modelling \& Statistical Inference}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    2019
+}%
+{\semicond TG Vaughan\textsuperscript{$\dagger$}, \me{GE Leventhal}\textsuperscript{$\dagger$}, DA Rasmussen\textsuperscript{}, AJ Drummond\textsuperscript{}, D Welch\textsuperscript{}, T Stadler\textsuperscript{}}.
+\pubtitle{Estimating epidemic incidence and prevalence from genomic data.}
+  \journal{Molecular Biology and Evolution} \journalissue{36(8):1804–1816}
+  \href{https://doi.org/10.1093/molbev/msz106}{\condensed10.1093/molbev/msz106}
+
+
+
+        \item%
+          \margin{%
+    2017
+}%
+{\semicond O Ratmann\textsuperscript{}, EB Hodcroft\textsuperscript{}, M Pickles\textsuperscript{}, A Cori\textsuperscript{}, M Hall\textsuperscript{}, S Lycett\textsuperscript{}, C Colijn\textsuperscript{}, B Dearlove\textsuperscript{}, X Didelot\textsuperscript{}, S Frost\textsuperscript{}, A Hossain\textsuperscript{}, JB Joy\textsuperscript{}, M Kendall\textsuperscript{}, D Kühnert\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, R Liang\textsuperscript{}, G Plazzotta\textsuperscript{}, AF Poon\textsuperscript{}, DA Rasmussen\textsuperscript{}, T Stadler\textsuperscript{}, E Volz\textsuperscript{}, C Weis\textsuperscript{}, AJ Leigh Brown\textsuperscript{}, C Fraser\textsuperscript{}}.
+\pubtitle{Phylogenetic Tools for Generalized HIV-1 Epidemics: Findings from the PANGEA-HIV Methods Comparison.}
+  \journal{Molecular Biology and Evolution} \journalissue{34(1):185-203}
+  \href{https://doi.org/10.1093/molbev/msw217}{\condensed10.1093/molbev/msw217}
+
+
+
+        \item%
+          \margin{%
+    2016
+}%
+{\semicond L du Plessis\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, S Bonhoeffer\textsuperscript{}}.
+\pubtitle{How good are statistical models at approximating complex fitness landscapes?.}
+  \journal{Molecular Biology and Evolution} \journalissue{33(9):2454-2468}
+  \href{https://doi.org/10.1093/molbev/msw097}{\condensed10.1093/molbev/msw097}
+
+
+
+        \item%
+          \margin{%
+    2015
+}%
+{\semicond T Stadler\textsuperscript{}, TG Vaughan\textsuperscript{}, A Gavryushkin\textsuperscript{}, S Guindon\textsuperscript{}, D Kühnert\textsuperscript{}, \me{GE Leventhal}\textsuperscript{}, AJ Drummond\textsuperscript{}}.
+\pubtitle{How well can the exponential-growth coalescent approximate constant-rate birth–death population dynamics?.}
+  \journal{Proceeding of the Royal Society B: Biological Sciences} \journalissue{282(1806):20150420}
+  \href{https://doi.org/10.1098/rspb.2015.0420}{\condensed10.1098/rspb.2015.0420}
+
+
+
+        \item%
+          \margin{%
+    2014
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, H Günthard\textsuperscript{}, S Bonhoeffer\textsuperscript{}, T Stadler\textsuperscript{}}.
+\pubtitle{Using an epidemiological model for phylogenetic inference reveals density-dependence in HIV transmission.}
+  \journal{Molecular Biology and Evolution} \journalissue{31(1):6-17}
+  \href{https://doi.org/10.1093/molbev/mst172}{\condensed10.1093/molbev/mst172}
+
+
+
+    \end{itemize}
+    \subsection*{Software \& Other Publications}
+    \begin{itemize}[label={},leftmargin=0pt]
+        \item%
+          \margin{%
+    2013-2016
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}}.
+\pubtitle{R package expoTree to calculate the density dependent likelihood of a phylogenetic tree. Available on CRAN..}
+
+
+
+        \item%
+          \margin{%
+    2012-2019
+}%
+{\semicond \me{GE Leventhal}\textsuperscript{}, L Schulé\textsuperscript{}, J Geering\textsuperscript{}}.
+\pubtitle{iRiSS: a free online journal TOC aggregator that helps you stay informed about the latest work produced in your field.}
+
+
+
+    \end{itemize}
+
+\pagebreak
+
+\section*{Teaching and Mentoring}
+  \margin{%
+  2016, 2018
+}
+Co-Instructor%
+,  Computational Ecology
+. MIT, Cambridge, MA, USA
+
+
+  \margin{%
+  2018
+}
+Co-Supervisor%
+,  Exchange graduate student
+   (Jacob Russel)
+. MIT, Cambridge, MA, USA
+
+
+  \margin{%
+  2016
+}
+Co-Supervisor%
+,  Rotation student
+   (Carles Boix)
+. MIT, Cambridge, MA, USA
+
+
+  \margin{%
+  2013
+    --- 2015
+}
+Co-Lecturer%
+,  Infectious Disease Dynamics
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2015
+}
+Co-Supervisor%
+,  Master's thesis
+   (Adriano Pagano)
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2015
+}
+Supervisor%
+,  Semester student
+   (Adriano Pagano)
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2015
+}
+Co-Supervisor%
+,  Master's thesis
+   (Martin Müller)
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2012
+}
+Co-Supervisor%
+,  Master's thesis
+   (Anna Hool)
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2012
+}
+Co-Supervisor%
+,  Semester student
+   (Robert Dünner)
+. ETH Zürich, Switzerland
+
+
+  \margin{%
+  2011
+    --- 2012
+}
+Co-Lecturer%
+,  English for nurses: an introduction to academic reading
+. Zurich University of Applied Sciences, Switzerland
+
+
+  \margin{%
+  2007
+    --- 2008
+}
+Tutor for undergraduate calculus%
+. Indiana University Bloomington, IN, U.S.A.
+
+
+  \margin{%
+  2005
+    --- 2007
+}
+Teaching assistant in physics%
+. EPFL, Lausanne, Switzerland
+
+
+  \margin{%
+  2003
+    --- 2004
+}
+Teaching assistant in scientific programming%
+. EPFL, Lausanne, Switzerland
+
+
+
+\section*{Selected presentations}
+  \margin{Jul 2019}
+ETH Zurich Food Biotechnology Seminar
+(talk)
+  {\condensed Zurich, Switzerland}
+
+
+  \margin{Feb 2019}
+Univeristy of Minnesota Seminar
+(talk)
+  {\condensed St. Paul, MN, USA}
+
+
+  \margin{Aug 2018}
+Penn State Microbiome Center Seminar
+(talk)
+  {\condensed State College, PA, USA}
+
+
+  \margin{Aug 2018}
+ISME Conference
+(talk)
+  {\condensed Leipzig, Germany}
+
+
+  \margin{Jul 2018}
+HFSP Fellows Meeting 2018
+(poster)
+  {\condensed Toronto, Canada}
+
+
+  \margin{Jun 2018}
+International Sourdough Symposium
+(poster)
+  {\condensed Cork, Ireland}
+
+
+  \margin{Jun 2018}
+NYU Genomics Symposium
+(talk)
+  {\condensed New York, NY, USA}
+
+
+  \margin{Jan 2018}
+MIT Ecology Meeting
+(talk)
+  {\condensed Cambridge, MA, USA}
+
+
+  \margin{Nov 2017}
+Workshop, Symbiosis in the microbial world: from ecology to genome evolution)
+(talk)
+  {\condensed West Sussex, UK}
+
+
+  \margin{Jul 2017}
+Gordon Research Conference: Microbial Population Biology
+(poster)
+  {\condensed Andover, NH, USA}
+
+
+  \margin{Jul 2017}
+Gordon Research Seminar: Microbial Population Biology
+(talk)
+  {\condensed Andover, NH, USA}
+
+
+  \margin{Mar 2017}
+Winter q-Bio Conference
+(talk)
+  {\condensed Kauai, HI, USA}
+
+
+  \margin{Oct 2016}
+Weizman Genome Evolution Conference
+(talk)
+  {\condensed Rehovot, Israel}
+
+
+  \margin{Aug 2016}
+ISME Conference
+(poster)
+  {\condensed Montreal, Canada}
+
+
+  \margin{Aug 2015}
+ESEB Conference
+(talk)
+  {\condensed Lausanne, Switzerland}
+
+
+  \margin{Jul 2015}
+SMBE Conference
+(poster)
+  {\condensed Vienna, Austria}
+
+
+  \margin{May 2015}
+HIV Dynamics and Evolution Conference
+(talk)
+  {\condensed Budapest, Hungary}
+
+
+  \margin{Feb 2014}
+New Zealand Phylodynamics Meeting
+(talk)
+  {\condensed Waiheke, New Zealand}
+
+
+  \margin{Nov 2013}
+Epidemics Conference
+(poster)
+  {\condensed Amsterdam, Netherlands}
+
+
+  \margin{May 2013}
+MCBE Conference
+(poster)
+  {\condensed Montpellier, France}
+
+
+  \margin{May 2013}
+HIV Dynamics and Evolution Conference
+(poster)
+  {\condensed Utrecht, Netherlands}
+
+
+  \margin{Jul 2012}
+Gordon Research Conference: Drug Resistance Evolution
+(poster)
+  {\condensed Easton, MA, USA}
+
+
+  \margin{Jan 2012}
+EE2 Workshop: Facing the challenge of infectious diseases
+(poster)
+  {\condensed Aosta, Italy}
+
+
+  \margin{Jul 2011}
+Gordon Research Conference: Microbial Population Biology
+(poster)
+  {\condensed Andover, NH, USA}
+
+
+  \margin{Nov 2011}
+EAWAG Aquatic Ecology and Macroevolution Seminar
+(talk)
+  {\condensed Kastanienbaum, Switzerland}
+
+
+
+\section*{Other Acadmic Activities}
+
+\subsubsection*{Grant Referee}
+Swiss National Science Foundation
+    
+\subsubsection*{Journal Referee}
+eLIFE; PNAS; Ecology Letters; Environmental Microbiology; Communications Biology; Proceedings of the Royal Society B; The American Naturalist; PLoS Computational Biology; Molecular Biology and Evolution; Journal of the Royal Soceity Interface; mSystems; Bioinformatics; Epidemics; Journal of Theoretical Biology; Theoretical Population Biology; Journal of Acq. Immune Deficiency Syndromes; Scientific Reports; PLoS ONE; Applied Mathematics and Computation; International Health
+
+\subsection*{Seminar Organizing Committee}
+\begin{itemize}[label={},leftmargin=0pt]
+  \item Parson's Microbial Systems Seminar, Massachusetts Institute of Technology
+  \item Ecology, Evolution, Environment, Behavior (E3B) Seminar, University of Zurich/ETH Zurich
+  \item Zurich Interaction Seminar, University of Zurich/ETH Zurich
+\end{itemize}
+
+\subsection*{Other activities}
+\begin{itemize}[label={},leftmargin=0pt]
+  \item%
+    Maintainer at Brewsci/bio.
+    Bioinformatics formulae for the Linuxbrew and Homebrew package managers..
+    \url{https://brewsci.github.io/homebrew-bio/}
+\end{itemize}
+
+\section*{References}
+\begin{itemize}[label={},leftmargin=0pt]
+  \item%
+    Prof. Otto Cordero, Massachusetts Institute of Technology, \href{mailto:ottox@mit.edu}{ottox@mit.edu}
+  \item%
+    Prof. Sebastian Bonhoeffer, ETH Zurich, \href{mailto:seb@env.ethz.ch}{seb@env.ethz.ch}
+  \item%
+    Prof. Christophe Fraser, University of Oxford, \href{mailto:christophe.fraser@bdi.ox.ac.uk}{christophe.fraser@bdi.ox.ac.uk}
+\end{itemize}
+
+\end{document}
